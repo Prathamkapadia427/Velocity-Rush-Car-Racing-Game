@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101827">
+  <title>Velocity Rush | WT Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">WEB TECHNOLOGIES PROJECT</p>
+        <h1>VELOCITY <span>RUSH</span></h1>
+      </div>
+      <button class="icon-btn" id="soundBtn" aria-label="Toggle sound">🔊</button>
+    </header>
+
+    <section class="game-shell">
+      <div class="hud">
+        <div class="hud-item"><small>SCORE</small><strong id="score">000000</strong></div>
+        <div class="hud-item"><small>BEST</small><strong id="best">000000</strong></div>
+        <div class="hud-item"><small>SPEED</small><strong><span id="speed">0</span><em> KM/H</em></strong></div>
+        <div class="hud-item"><small>LEVEL</small><strong id="level">1</strong></div>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="game" width="480" height="720" aria-label="Car racing game"></canvas>
+        <div class="overlay" id="overlay">
+          <div class="panel">
+            <p class="eyebrow" id="panelEyebrow">READY TO RACE?</p>
+            <h2 id="panelTitle">VELOCITY RUSH</h2>
+            <p id="panelText">Dodge traffic, collect points and beat your best score.</p>
+            <button class="main-btn" id="startBtn">START RACE</button>
+            <p class="hint">Keyboard: ← → or A / D · Mobile: use the controls below</p>
+          </div>
+        </div>
+        <div class="pause-tag" id="pauseTag">PAUSED</div>
+      </div>
+
+      <div class="mobile-controls">
+        <button class="control-btn" id="leftBtn" aria-label="Move left">◀</button>
+        <button class="control-btn boost" id="boostBtn" aria-label="Boost">BOOST</button>
+        <button class="control-btn" id="rightBtn" aria-label="Move right">▶</button>
+      </div>
+      <div class="bottom-bar">
+        <span>★ Avoid the traffic</span>
+        <span>★ Survive to level up</span>
+        <button id="pauseBtn" class="pause-btn">Ⅱ PAUSE</button>
+      </div>
+    </section>
+    <footer>Built with HTML • CSS • JavaScript <span> | </span> WT Project</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
